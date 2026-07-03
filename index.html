@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compliance Assessment — BG.legal</title>
+<meta name="description" content="Compliance Assessment van BG.legal. Brede compliance-doorlichting op het gebied van AI en gegevensverwerking.">
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#2F302F; --paper:#DEDAC6; --cream:#ede8dc;
+  --accent:#B9B9EB; --accent-dark:#8585cc; --accent-light:#f0eff9;
+  --muted:#7a7468; --white:#fdfaf5;
+  --green:#2d7a5f; --green-light:#e4f0eb;
+  --red:#c8401e; --red-light:#f5e8e4;
+  --amber:#c9841e; --amber-light:#f5ede0;
+  --border:rgba(47,48,47,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Switzer',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.4;}
+
+/* ── HERO ── */
+.hero{max-width:800px;margin:0 auto;padding:80px 48px 40px;text-align:center;}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-dark);margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:8px;}
+.eyebrow::before,.eyebrow::after{content:'';display:block;width:24px;height:1px;background:var(--accent-dark);opacity:.5;}
+h1{font-family:'Switzer',sans-serif;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.12;letter-spacing:-.02em;color:var(--ink);margin-bottom:18px;}
+h1 em{font-style:normal;color:var(--accent-dark);}
+.hero-sub{font-size:1.02rem;line-height:1.7;color:var(--muted);font-weight:300;max-width:560px;margin:0 auto;}
+
+/* ── META ROW ── */
+.meta-row{display:flex;justify-content:center;gap:32px;margin:34px 0 0;flex-wrap:wrap;}
+.meta-item{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--muted);}
+
+/* ── INFO CARD ── */
+.info-section{max-width:760px;margin:0 auto;padding:20px 48px 20px;}
+.info-card{background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:38px 40px;}
+.info-card p{font-size:.92rem;line-height:1.8;color:var(--ink);font-weight:300;margin-bottom:1.2rem;}
+.info-card p:last-of-type{margin-bottom:0;}
+.info-card .placeholder{color:var(--ink);font-style:normal;}
+.link-subtle{display:inline-flex;align-items:center;gap:6px;margin-top:20px;font-size:.85rem;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s ease;}
+.link-subtle:hover{color:var(--accent-dark);}
+.link-subtle .arrow{transition:transform .2s ease;}
+.link-subtle:hover .arrow{transform:translateX(3px);}
+.link-subtle-wrap{text-align:center;margin-top:16px;}
+
+/* ── CTA BLOCK (zelfde stijl als op de resultatenpagina van de tool) ── */
+.cta-wrap{max-width:760px;margin:34px auto 80px;padding:0 48px;}
+.cta-block{background:var(--ink);border-radius:10px;padding:40px 44px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;}
+.cta-text h3{font-family:'Switzer',sans-serif;font-size:1.4rem;color:var(--white);margin-bottom:6px;}
+.cta-text p{font-size:.86rem;color:rgba(255,255,255,.55);font-weight:300;}
+.btn-cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent-dark);color:white;font-family:'Switzer',sans-serif;font-size:.92rem;font-weight:600;padding:15px 28px;border:none;border-radius:4px;cursor:pointer;text-decoration:none;transition:all .2s ease;white-space:nowrap;}
+.btn-cta:hover{opacity:.88;transform:translateY(-1px);box-shadow:0 12px 30px rgba(133,133,204,.35);}
+
+footer{max-width:900px;margin:0 auto;padding:24px 48px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:.78rem;color:var(--muted);border-top:1px solid var(--border);}
+footer a{color:var(--muted);text-decoration:none;}
+footer a:hover{color:var(--accent-dark);}
+footer strong{color:var(--ink);}
+
+@media(max-width:720px){
+  .hero,.info-section,.cta-wrap{padding-left:24px;padding-right:24px;}
+  .info-card{padding:28px 26px;}
+  .cta-block{flex-direction:column;align-items:flex-start;}
+  footer{padding-left:24px;padding-right:24px;flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="eyebrow">Compliance Assessment</div>
+  <h1>Volledige<br><em>compliance</em> assessment</h1>
+  <p class="hero-sub">Een volledige analyse van uw AI-toepassingen en gegevensverwerkingen, uitgevoerd onder begeleiding van BG.legal.</p>
+  <div class="meta-row">
+    <div class="meta-item">
+      <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      4 dagdelen
+    </div>
+    <div class="meta-item">
+      <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      6 modules
+    </div>
+  </div>
+</section>
+
+<div class="info-section">
+  <div class="info-card">
+    <p class="placeholder">
+      De Compliance Assessment is bedoeld voor organisaties die weten dat een specifieke regelgeving op hen van toepassing is en willen vaststellen of zij daaraan voldoen — ook met het oog op de vragen van stakeholders zoals investeerders of opdrachtgevers over juridische risico's bij het gebruik van een AI-systeem. Het proces is vergelijkbaar met een ISO-certificatie: BG.Legal begeleidt de klant stap voor stap bij het uitvoeren van het assessment, waarbij eerst een overeenkomst wordt gesloten over de scope en uitvoering, en het traject uitmondt in ofwel een Conformiteitsverklaring ("Seal of Approval") als de organisatie compliant blijkt te zijn, ofwel een concrete "roadmap to compliance" met de stappen die nog gezet moeten worden.
+    
+  </div>
+</div>
+
+<div class="cta-wrap">
+  <div class="cta-block">
+    <div class="cta-text">
+      <h3>Interesse in de Compliance Assessment?</h3>
+      <p>Neem contact op met BG.legal om de mogelijkheden voor uw organisatie te bespreken.</p>
+    </div>
+    <a class="btn-cta" href="mailto:wijst@bg.legal?subject=Aanvraag%20Compliance%20Assessment">
+      Neem contact op →
+    </a>
+  </div>
+  <div class="link-subtle-wrap">
+    <a class="link-subtle" href="/assessment-compliance">
+      Ga direct naar het Compliance Assessment <span class="arrow">→</span>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div><strong>BG.legal</strong> · <a href="https://www.bg.legal">www.bg.legal</a> · <a href="mailto:info@bg.legal">info@bg.legal</a></div>
+  <div>© 2026 BG.legal</div>
+</footer>
+
+</body>
+</html>
